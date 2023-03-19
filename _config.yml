@@ -1,6 +1,6 @@
 title: GORILLA SUN BLOG
 author: Ahmad Moussa
-url: domain # the base hostname & protocol for your site
+url: http://www.wiembnr.com/Blog/ # the base hostname & protocol for your site
 baseurl:
 permalink: blog/:title
 
