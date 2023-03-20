@@ -13,7 +13,7 @@ listed: true
 legacy: false
 ---
 
-![readability](https://user-images.githubusercontent.com/13065761/151680387-2269ab68-8cbb-4e3d-bb11-a1ca2c7c6106.png)
+<img class="image fit" src= "https://user-images.githubusercontent.com/13065761/151680387-2269ab68-8cbb-4e3d-bb11-a1ca2c7c6106.png">
 
 ## Project Motivation
 The success of a supervised learning task like predicting readability comes primarily from the
