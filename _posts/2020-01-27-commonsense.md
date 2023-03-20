@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Sample Blog Post
+title: Commensense
 author: Ahmad Moussa
 categories:
   - blog
 description: This is a sample blog post
 thumbtype: img
-thumbnail_path: https://gorillasun.de/assets/images/compressed/sketchfromscratch.webm
+thumbnail_path: ../../assets/images/profile.JPG
 published: true
 exclude_rss: false
 listed: true
