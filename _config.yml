@@ -1,5 +1,5 @@
-title: GORILLA SUN BLOG
-author: Ahmad Moussa
+title: Wiem Ben Rim
+author: Wiem Ben Rim
 url: http://www.wiembnr.com/Blog/ # the base hostname & protocol for your site
 baseurl:
 permalink: blog/:title
