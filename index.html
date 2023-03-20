@@ -91,31 +91,32 @@ permalink:
 	</div>
 </section> -->
 
-<!-- <section>
+<section>
 	<div style='height: 100%'>
-	<div class="row gtr-100">
+		<div class="row gtr-100">
 			<div class="col-5 col-12-medium" style='margin: 0 0 1em 0;'>
 				<div class='box' style='height: 100%'>
-				<h2> Recent Blog Posts </h2>
+					<h2> Recent Blog Posts </h2>
 
-				{% assign postsByMonth =
-				site.posts | group_by_exp:"post", "post.date | date: '%B %Y'" %}
+					{% assign postsByMonth =
+						site.posts | group_by_exp:"post", "post.date | date: '%B %Y'" %}
 
-				{% for month in postsByMonth limit:2 %}
-				  <h3>{{ month.name }}</h3>
-				    <ul style="list-style-type:none;">
-				      {% for post in month.items %}
-					 <li>{{ post.date | date: "%d " }}:  <a href="https://gorillasun.de{{ post.url }}">{{post.title}}</a></li>
-				      {% endfor %}
-				    </ul>
-				{% endfor %}
+					{% for month in postsByMonth limit:2 %}
+				  	<h3>{{ month.name }}</h3>
+				    		<ul style="list-style-type:none;">
+							{% for post in month.items %}
+							 <li>{{ post.date | date: "%d " }}:  <a href="https://gorillasun.de{{ post.url }}">{{post.title}}</a></li>
+							{% endfor %}
+				    		</ul>
+					{% endfor %}
 				</div>
-				<p></p>
 			</div>
+		</div> 
+	</div>
+</section>
+<!-- 			<div class="col-7 col-12-medium" style='margin: 0 0 1em 0;'> -->
 
-			<div class="col-7 col-12-medium" style='margin: 0 0 1em 0;'>
-
-				<div class='box' style='height: 100%'>
+<!-- 				<div class='box' style='height: 100%'>
 
 				<h3>What are my blog posts about?</h3>
 				<p>I mainly discuss popular (sometimes obscure) creative coding techniques and break them up into digestible step-by-step tutorials!
@@ -131,11 +132,10 @@ permalink:
 					<li><a href="https://gorillasun.de/posts/" class="button">Jump to Posts tab!</a></li>
 				</ul>
 				</div>
-			</div>
-</div>
-		</div>
+			</div> -->
 
-</section> -->
+
+
 
 
 <!-- <div> -->
@@ -253,6 +253,6 @@ A site dedicated to explaining concepts in Machine Learning, Deep Learning and A
 <section>
 	<div class='box' style='height: 200px' >
 	<h2>Contact</h2>
-	The most reliable way to get in touch with me is by DM-ing me on <a href='https://twitter.com/gorillasu'>Twitter</a> or alternatively on <a href='https://www.instagram.com/gorilla_sun_blog/'>instagram</a>. For more formal inquiries, shoot an email to gorillasuncontact@gmail.com , I will be happy to reply asap! :)
-		</div>
+	The most reliable way to get in touch with me is by email: wiem(@)sas.upenn.edu
+	</div>
 </section>
