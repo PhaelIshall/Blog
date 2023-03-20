@@ -99,7 +99,7 @@ permalink:
 			
 			<div class="col-5 col-12-medium" style='margin: 0 0 1em 0;'>
 				<h2> Recent Blog Posts </h2>
-				<div class='box' style='height: 100%'>
+				<div class='box'>
 					{% assign postsByMonth =
 						site.posts | group_by_exp:"post", "post.date | date: '%B %Y'" %}
 
