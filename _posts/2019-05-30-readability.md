@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Extracting
-author: Ahmad Moussa
+title: Extracting Non-traditional Features to Predict Readability
+author: Wiem Ben Rim
 categories:
   - blog
-description: This is a sample blog post
+description: There are many common features used to predict readability that were not necessarily designed for supervised learning, and do not map well to our dataset
 thumbtype: img
 thumbnail_path: https://user-images.githubusercontent.com/13065761/151680387-2269ab68-8cbb-4e3d-bb11-a1ca2c7c6106.png
 published: true
