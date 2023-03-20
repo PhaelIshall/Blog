@@ -21,10 +21,7 @@ permalink:
 	</div>
 
 	<span class="image object"  style="position:relative; overflow: hidden;">
-
-		
-		<div id='container' style="height: 100%;
-		left:50%; top:50%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); background-color:gray; position:absolute; border-radius: 0.375em;"><img src="https://github.com/PhaelIshall/Blog/blob/main/images/1152.png" alt="website banner"> </div>
+		<img src="https://github.com/PhaelIshall/Blog/blob/main/images/1152.png" alt="website banner"> </div>
 	</span>
 
 
@@ -189,47 +186,9 @@ permalink:
   width: 100vw;'>
 	<div id='container2'></div>
 </div>
-	  <script>
-	  let sketch2 = function(p) {
-	    p.setup = function(){
-	      p.createCanvas(p.windowWidth, 150);
-				p.pixelDensity(1)
-				p.background(255)
-				p.stroke(0)
-				p.strokeWeight(2)
-				p.strokeCap(p.PROJECT)
-				p.fill(255,60,0)
-	    }
-
-			resizeToggle = true
-			p.draw = function(){
-				if(resizeToggle){
-					p.background(255,60,0)
-
-					for(let x = 0; x < document.body.clientWidth; x += 20){
-						for(let y = 0; y < 300; y += 20){
-							let noi = p.noise(x,y+p.frameCount/1000)
-							if(noi<.5){
-								p.line(x, y, x+20, y+20)
-							}else{
-								p.line(x, y+20, x+20, y)
-							}
-						}
-					}
-					resizeToggle = true
-				}
-			}
-
-			p.windowResized = function(){
-				p.resizeCanvas(document.body.clientWidth, 150)
-				resizeToggle = true
-			}
-	  };
-	  new p5(sketch2, 'container2');
-	  </script>
+	  
 </section>
-<p></p>
-<p></p>
+
 <!--
 <section>
 		<div class="row gtr-200">
