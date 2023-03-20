@@ -6,7 +6,7 @@ categories:
   - blog
 description: This is a sample blog post
 thumbtype: img
-thumbnail_path: ../../assets/images/profile.JPG
+thumbnail_path: https://user-images.githubusercontent.com/13065761/151680387-2269ab68-8cbb-4e3d-bb11-a1ca2c7c6106.png
 published: true
 exclude_rss: false
 listed: true
