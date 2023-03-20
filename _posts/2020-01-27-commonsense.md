@@ -29,8 +29,8 @@ situations.
 - Used multiple methods on the pre-trained language model BERT to recognize sentences against commonsense and justify the reasoning behind this decision. 
 - Investigated the ability to transfer commonsense knowledge from SWAG to ComVE task by training a model for the Explanation task with Next Event Prediction data.  
 
-    <span class="image-fit"><img src="https://user-images.githubusercontent.com/13065761/151681108-1bac2faf-030e-44d2-b38a-b701b1eb0bd1.png">
-    <span class="image-fit"><img src="https://user-images.githubusercontent.com/13065761/151681110-03301049-6762-482e-9b1d-f4fd3f27939d.png">
+    <span class="image-fit"><img src="https://user-images.githubusercontent.com/13065761/151681108-1bac2faf-030e-44d2-b38a-b701b1eb0bd1.png"  alt="" />
+    <span class="image-fit"><img src="https://user-images.githubusercontent.com/13065761/151681110-03301049-6762-482e-9b1d-f4fd3f27939d.png"  alt="" />
 
 
 ## Project Results
