@@ -7,7 +7,7 @@ categories:
 description: This is a sample blog post
 thumbtype: img
 thumbnail_path: ../../assets/images/1152.png
-published: true
+published: false
 exclude_rss: false
 listed: true
 legacy: false
