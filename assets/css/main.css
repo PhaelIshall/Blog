@@ -180,15 +180,15 @@ Main Components
   transition: background-color 0.3s, border-color 0.3s;
 }
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-  background-color: #7b9d6f;
-  border-color: #7b9d6f;
+  background-color: #f56a6a;
+  border-color: #f56a6a;
 }
 .cd-horizontal-timeline .events a.selected {
   pointer-events: none;
 }
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #7b9d6f;
-  border-color: #7b9d6f;
+  background-color: #f56a6a;
+  border-color: #f56a6a;
 }
 .cd-horizontal-timeline .events a.older-event::after {
   border-color: #7b9d6f;
