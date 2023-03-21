@@ -3,18 +3,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-$(function(){
-	var inputs = $('.input');
-	var paras = $('.description-flex-container').find('p');
-	inputs.click(function(){
-		var t = $(this),
-				ind = t.index(),
-				matchedPara = paras.eq(ind);
-		
-		t.add(matchedPara).addClass('active');
-		inputs.not(t).add(paras.not(matchedPara)).removeClass('active');
-	});
-});
+
 ////////////////////////////////////////////////////////////////////////////////
 (function($) {
 
