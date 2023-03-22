@@ -73,8 +73,8 @@ body {
   top: 50%;
 }
 .how-it-works.row .col-2.full::after {
-  height: 100%;
-  left: calc(50% - 3px);
+/*   height: 100%; */
+/*   left: calc(50% - 3px); */
 }
 .how-it-works.row .col-2.top::after {
   height: 50%;
