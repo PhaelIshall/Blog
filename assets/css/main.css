@@ -77,9 +77,9 @@ body {
 /*   left: calc(50% - 3px); */
 }
 .how-it-works.row .col-2.top::after {
-  height: 50%;
+/*   height: 50%;
   left: 50%;
-  top: 0;
+  top: 0; */
 }
 
 .timeline div {
@@ -89,7 +89,7 @@ body {
 .timeline hr {
   border-top: 3px solid #ED8D8D;
   margin: 0;
-  top: 17px;
+/*   top: 17px; */
   position: relative;
 }
 .timeline .col-2 {
