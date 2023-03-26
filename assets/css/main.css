@@ -11,8 +11,11 @@
 }
  */
 
+.container_img{
+  position: relative;
+}
 
-.col-2 col-12-medium:hover .overlay_img {
+.container_img:hover .overlay_img {
   opacity: 1;
 }
 
