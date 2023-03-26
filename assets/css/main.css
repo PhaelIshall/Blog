@@ -10,6 +10,13 @@
     display: inline;
 }
  */
+
+
+.edu{
+	border: 2px solid #f56a6a;; 
+	border-radius: 50%;"
+}
+
 p + ul {
     margin-top: -30px;
 }
