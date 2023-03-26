@@ -12,8 +12,21 @@
  */
 
 
+.overlay_img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:  #f56a6a;
+}
+
 .edu{
-	border: 2px solid #f56a6a;; 
+	border: 2px solid #f56a6a;
 	border-radius: 30%;"
 }
 
