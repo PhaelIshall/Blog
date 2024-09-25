@@ -9,50 +9,174 @@ permalink: /publications/
 <!-- Content -->
 <section id='banner'>
 <style> 
+
+
+.scontainer {
+  width: 100%;
+	display: flex;
+  /* height: 200px; */
+  /* background: aqua; */
+  /* margin: 0.5em; */
+  /* padding: 10px; */
+}
+
+.abstract{
+	font-weight: bold;
+	color: black;
+}
+
+.abstract-text{
+	font-style: italic;
+}
+.box-right {
+	 /* float:right; */
+	 display: none;
+	 background-color: rgb(255, 255, 255);
+	 width: 53%;
+	 /* height: 100px; */
+	 justify-self: flex-start;
+	 border-radius: 5px;
+	 
+	 margin-left: 2%;
+	 padding: 1.5em;
+	 color: black;
+	 /* font-size: ; */
+	
+	 /* float:top; */
+
+	 
+	}
+
 	.box {
 	  padding: 0.5em 0.5em 0;
-		max-width: 700px;
+		background-color: rgba(255, 45, 45, 0.072);
+		border: none;
+		border-radius: 10px;
+		width: 100%;
+		/* float:left; */
+		padding: 1.5em
 	}
 
 	.info {
 		display: none;
+		color: black;
+		/* margin: 0.5em; */
+		/* background-color: rgb(128, 30, 30);
+		border: 2px solid rgb(138, 38, 38);
+		border-radius: 5px;
+	  padding: 1em; */
 	}
 
 	.box:hover > .info {
 		display: block
 	}
 
-	.box-title {
-		justify-self: flex-start;
+	.scontainer:hover > .box-right {
+
+		display: block
 	}
-	
-	summary {
-	  
-	  font-weight: bold;
-	  margin: 0.5em;
-	 background-color: lightgrey;
-	border: 2px solid darkgrey;
-	border-radius: 5px;
-	  padding: 1em;
+
+	.box-title {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		width: 100%;
+		justify-self: flex-start;
+		margin-left: 0px; 
+		font-weight: bolder;
+		color: black;
+		/* text-align: left; */
+		/* align-self: left; */
 	}
 
 	.box-container {
-		display: flex;
+		/* display: flex; */
 		justify-content: flex-end;
 	}
 
 	.left-button {
-		background-color: blue !important;
-		border-radius: 5px;
+		background-color: rgb(237, 51, 44) !important;
+		border-radius: 15px;
 	}
 
 	.right-button {
-		background-color: lightblue !important;
-		border-radius: 5px;
+		background-color: rgb(228, 62, 159) !important;
+		border-radius: 15px;
 	}
 	
+	.award-button {
+		background-color: rgb(5, 93, 2) !important;
+		color: black;
+		border-radius: 15px;
+	}
 /* 	.sum {position: relative; } */
-	
+/* Create two equal columns that floats next to each other */
+.column {
+	padding: 0.5em 0.5em 0;
+		background-color: rgba(255, 45, 45, 0.072);
+		border: none;
+		border-radius: 10px;
+		/* width: 45%; */
+		/* float:left; */
+		padding: 2em;
+  /* float: left; */
+  width: 45%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flexcontainer {
+	width: 100%;
+	display: flex;
+
+}
+
+.flexleft {
+	width: 100%;
+	/* background-color: blue; */
+
+	flex: 1 1 50%;
+}
+
+.flexright {
+	width: 100%;
+	/* background-color: green; */
+
+	flex: 1 1 50%;
+
+
+
+	/* display: none; */
+	 background-color: rgb(255, 255, 255);
+	 /* width: 53%; */
+	 /* height: 100px; */
+	 /* justify-self: flex-start; */
+	 border-radius: 5px;
+	 
+	 margin-left: 2%;
+	 padding: 1.5em;
+	 color: black;
+}
+
+.flexright img{
+    /* width: 100px; */
+    margin: auto;
+    /* display: block; */
+
+}
+@media only screen and (max-width: 600px) {
+  .flexcontainer {
+	flex-direction: column;
+
+}
+}
+
 
 </style>
 <div class='content'>
@@ -60,113 +184,131 @@ permalink: /publications/
 	<header class="main">
 		<h1>List of Publications</h1>
 	</header>
+
+	<div class="flexcontainer">
 	
-	<div class='box'>
-		<ul>
-			<li> Widjaja H., Gashteovski, K. and Ben Rim W. Liu, P. and Malon C., Ruffinelli, D., Lawrence, C., and Neubig, G. 
-			KGxBoard: Explainable and Interactive Leaderboard for Evaluation of Knowledge Graph Completion Models, demo paper track at EMNLP 2022. </li>
-			<li> Saralajew S., Shaker A., Xu Z., Gashteovski K., Kotnis B., <strong>Ben Rim W</strong>, Quittek J., Lawrence C., A Human-Centric Assessment Framework for AI, Poster presented at <i> ICML 2022 Workshop on Human-Machine Collaboration</i> </li>
-			<li><strong>Ben Rim W.</strong>, Lawrence C., Gashteovski K., Niepert M., Okazaki N., “Behavioral Testing of Knowledge Graph Embedding Models for Link Prediction”, Outstanding Paper Award at the <i>  3rd Conference on Automated Knowledge Base Construction (AKBC) 2021,</i>i>  (Oral presentation)</li>
-			<li> <strong>Ben Rim W.</strong>, Okazaki N., “Commonsense Explanation as Next Event Prediction”, appeared in <i> Proceedings of the 14th International Workshop on Semantic Evaluation</i> , Poster presented at COLING 2020. </li>
-		</ul>
-	</div>
-	    	
-<!-- 			<div class="outer">
-				<div class="box-container">
-					<div class='box-title'> KGxBoard: Explainable and Interactive Leaderboard for Evaluation of Knowledge Graph Completion Models </div>
-				 
-				    <span class="button primary small left-button" >EMNLP2022 </span> <span class="button primary small right-button">Demo Paper </span> 
+		<div class="flexleft">
+			<section class="scontainer" id="1"> 
+				<div class='box'>
+						<div class="outer">
+							<div class="box-container">
+								<span class="button primary small left-button" >EMNLP2022 </span> <span class="button primary small right-button">Demo Paper </span> 
+								<div class='box-title'> KGxBoard: Explainable and Interactive Leaderboard for Evaluation of Knowledge Graph Completion Models </div>	   
+							</div>
+						</div>
+						<div class="info">
+						Widjaja H., Gashteovski, K. and Ben Rim W. Liu, P. and Malon C., Ruffinelli, D., Lawrence, C., and Neubig, G. 
+						KGxBoard: Explainable and Interactive Leaderboard for Evaluation of Knowledge Graph Completion Models, demo paper track at <i> EMNLP 2022. </i>
+					</div>
+				</div>	
+			</section>
 			
-				   
+		
+			<section class="scontainer" id="2"> 
+			<div class='box'>
+						<div class="outer">
+						<div class="box-container">
+							<span class="button primary small left-button" >ICML 2022</span> <span class="button primary small right-button" > Workshop </span> 
+							<div class='box-title'>A Human-Centric Assessment Framework for AI</div>
+					 </div>
+					</div>
+						<div class="info">
+					Saralajew S., Shaker A., Xu Z., Gashteovski K., Kotnis B., <strong>Ben Rim W</strong>, Quittek J., Lawrence C., A Human-Centric Assessment Framework for AI, Poster presented at <i> ICML 2022 Workshop on Human-Machine Collaboration </i>
 				</div>
 			</div>
-			<div class="info">
-		  Widjaja H., Gashteovski, K. and Ben Rim W. Liu, P. and Malon C., Ruffinelli, D., Lawrence, C., and Neubig, G. 
-			KGxBoard: Explainable and Interactive Leaderboard for Evaluation of Knowledge Graph Completion Models, demo paper track at EMNLP 2022.
-		</div>
+		</section>
+
+
+
+
+		<section class="scontainer"  id="3"> 
+			<div class='box'>
+				<div class="outer">
+					<div class="box-container">
+						<span class="button primary small left-button"> AKBC </span> <span class="button primary small award-button"> Outstanding Paper Award </span>  
+						<div class='box-title'>Behavioral Testing of Knowledge Graph Embedding Models for Link Prediction</div>	
+					</div> 
+						</div>
+						<div class="info">
+					<strong>Ben Rim W.</strong>, Lawrence C., Gashteovski K., Niepert M., Okazaki N., “Behavioral Testing of Knowledge Graph Embedding Models for Link Prediction”, Outstanding Paper Award at the <i>  3rd Conference on Automated Knowledge Base Construction (AKBC) 2021,</i>  (Oral presentation)
+				</div>
+			</div>
+		</section>
 		
-		
-	
-	</div>
-	
-	<div class='box'>
-		
-	    	
-			  <div class="outer">
-				<div class="box-container">
-					<div class='box-title'>A Human-Centric Assessment Framework for AI</div>
-					<span class="button primary small left-button" >ICML 2022</span> <span class="button primary small right-button" > Workshop </span> 
-				
-					
+		<section class="scontainer"  id="4"> 
+			<div class='box'>	
+				 <div class="outer">
+					<div class="box-container">
+						<span class="button primary small left-button" > EMNLP2021 </span> <span class="button primary small right-button" > WiNLP </span>
+							<div class='box-title'>
+								Behavioral Testing of Knowledge Graph Embedding Models</div>
+							</div>
 				 </div>
+						<div class="info">
+							<strong>Ben Rim W.</strong>, Lawrence C., Gashteovski K., Niepert M., Okazaki N., “Behavioral Testing of Knowledge Graph Embedding Models”, Poster presented at <i> WideningNLP</i>,  co-allocated with EMNLP, 2021.
+				</div>
 			</div>
-			  <div class="info">
-			Saralajew S., Shaker A., Xu Z., Gashteovski K., Kotnis B., <strong>Ben Rim W</strong>, Quittek J., Lawrence C., A Human-Centric Assessment Framework for AI, Poster presented at <i> ICML 2022 Workshop on Human-Machine Collaboration</i>
-		</div>
+		</section>
 		
 		
-		
-	</div>
-
-	<div class='box'>
-		
-	    	
-		    <div class="outer">
-			<div class="box-container">
-				<div class='box-title'>Behavioral Testing of Knowledge Graph Embedding Models for Link Prediction</div>
-				<span class="button primary small left-button"> AKBC </span> <span class="button primary small right-button"> Outstanding Paper Award </span>  
-		   
-				
-			</div> 
-		    </div>
-			  <div class="info">
-			<strong>Ben Rim W.</strong>, Lawrence C., Gashteovski K., Niepert M., Okazaki N., “Behavioral Testing of Knowledge Graph Embedding Models for Link Prediction”, Outstanding Paper Award at the <i>  3rd Conference on Automated Knowledge Base Construction (AKBC) 2021,</i>i>  (Oral presentation)
-		</div>
-		
-		
-		
-	</div>
-
-
-	<div class='box'>
-		
-	    	
-		 <div class="outer">
-			<div class="box-container">
-				<div class='box-title'>
-				Behavioral Testing of Knowledge Graph Embedding Models</div>
+			<section class="scontainer"  id="5"> 
+			<div class='box'>	
+					<div class="outer">
+						 <div class="box-container">
+							<span class="button primary small left-button" > COLING 2020 </span> <span class="button primary small right-button" > Workshop </span>
+							 <div class='box-title'>
+								Commonsense Explanation as Next Event Prediction </div>
+							 </div>
+					 </div>
+						<div class="info">
+					<strong>Ben Rim W.</strong>, Okazaki N., “Commonsense Explanation as Next Event Prediction”, appeared in <i> Proceedings of the 14th International Workshop on Semantic Evaluation</i> , Poster presented at COLING 2020.
+				</div>
 			</div>
-				<span class="button primary small left-button" > EMNLP2021 </span> <span class="button primary small right-button" > WiNLP </span>
-			
-		 </div>
-			  <div class="info">
-		    	<strong>Ben Rim W.</strong>, Lawrence C., Gashteovski K., Niepert M., Okazaki N., “Behavioral Testing of Knowledge Graph Embedding Models”, Poster presented at <i> WideningNLP</i>,  co-allocated with EMNLP, 2021.
+		</section>
+
 		</div>
-		
-		
+
+		<div class="flexright">
+			
+		</div>
 		
 	</div>
 
-	<div class='box'>
+	<script>
+
+		const descriptions = [
+		"<div class='abstract'> Abstract </div> <p class='abstract-text'> Knowledge Graphs (KGs) store information in the form of (head, predicate, tail)-triples. To augment KGs with new knowledge, researchers proposed models for KG Completion (KGC) tasks such as link prediction; i.e., answering (h; p; ?) or (?; p; t) queries. Such models are usually evaluated with averaged metrics on a held-out test set. While useful for tracking progress, averaged single-score metrics cannot reveal what exactly a model has learned -- or failed to learn. To address this issue, we propose KGxBoard: an interactive framework for performing fine-grained evaluation on meaningful subsets of the data, each of which tests individual and interpretable capabilities of a KGC model. In our experiments, we highlight the findings that we discovered with the use of KGxBoard, which would have been impossible to detect with standard averaged single-score metrics.  </p> 	<img style='width: 100%' src='../assets/images/kgxboard.png'>",
+
+			"<div class='abstract'> Abstract </div> <p class='abstract-text'> With the rise of AI systems in real-world applications comes the need for reliable and trustworthy AI. An important aspect for this are explainable AI systems. However, there is no agreed standard on how explainable AI systems should be assessed. Inspired by the Turing test, we introduce a human-centric assessment framework where a leading domain expert accepts or rejects the solutions of an AI system and another domain expert. By comparing the acceptance rates of provided solutions, we can assess how the AI system performs in comparison to the domain expert, and in turn whether or not the AI system's explanations (if provided) are human understandable. This setup -- comparable to the Turing test -- can serve as framework for a wide range of human-centric AI system assessments. We demonstrate this by presenting two instantiations: (1) an assessment that measures the classification accuracy of a system with the option to incorporate label uncertainties; (2) an assessment where the usefulness of provided explanations is determined in a human-centric manner.  </p> <img style='margin: auto; right: 50%;  transform: translateX(+35%); width: 60%' src='../assets/images/hai.png'>",
+		"<div class='abstract'> Abstract </div> <p class='abstract-text'> Knowledge graph embedding (KGE) models are often used to encode KGs in order to predict new links inside the graph. The accuracy of these methods is typically evaluated by computing an averaged accuracy metric on a held-out test set. This approach, however, does not allow the identication of where the models might systematically fail or succeed. To address this challenge, <strong> we propose a new evaluation framework that builds on the idea of (black-box) behavioral testing, a software engineering principle that enables users to detect system failures before deployment. With behavioral tests, we can speci cally target and evaluate the behavior of KGE models on speci c capabilities deemed important in the context of a particular use case. </strong> To this end, we leverage existing KG schemas to design behavioral tests for the link prediction task. With an extensive set of experiments, we perform and analyze these tests for several KGE models. Crucially, we for example find that a model ranked second to last on the original test set actually performs best when tested for a specic capability. Such insights allow users to better choose which KGE model might be most suitable for a particular task. The framework is extendable to additional behavioral tests and we hope to inspire fellow researchers to join us in collaboratively growing this framework. The framework is available at https: //github.com/nec-research/KGEval. </p> 	<img style='width: 100%' src='../assets/images/akbc1.png'>",
+		"<div class='abstract'> Abstract </div> <p class='abstract-text'> Knowledge graph embedding (KGE) models are often used to encode KGs in order to predict new links inside the graph. The accuracy of these methods is typically evaluated by computing an averaged accuracy metric on a held-out test set. This approach, however, does not allow the identication of where the models might systematically fail or succeed. To address this challenge, <strong> we propose a new evaluation framework that builds on the idea of (black-box) behavioral testing, a software engineering principle that enables users to detect system failures before deployment. With behavioral tests, we can speci cally target and evaluate the behavior of KGE models on speci c capabilities deemed important in the context of a particular use case. </strong> To this end, we leverage existing KG schemas to design behavioral tests for the link prediction task. With an extensive set of experiments, we perform and analyze these tests for several KGE models. Crucially, we for example find that a model ranked second to last on the original test set actually performs best when tested for a specic capability. Such insights allow users to better choose which KGE model might be most suitable for a particular task. The framework is extendable to additional behavioral tests and we hope to inspire fellow researchers to join us in collaboratively growing this framework. The framework is available at https: //github.com/nec-research/KGEval. </p> 	<img style='width: 100%' src='../assets/images/akbc1.png'>",
+		"<div class='abstract'> Abstract </div> <p class='abstract-text'> We describe the system submitted by the SWAGex team to the SemEval-2020 Commonsense Validation and Explanation Task. We use multiple methods on the pre-trained language model BERT (Devlin et al., 2018) for tasks that require the system to recognize sentences against commonsense and justify the reasoning behind this decision. Our best performing model is BERT trained on SWAG and fine-tuned for the task. We investigate the ability to transfer commonsense knowledge from SWAG to SemEval-2020 by training a model for the Explanation task with Next Event Prediction data.  </p>",
+		]
+
+		let abstractContainer = document.getElementsByClassName("flexright")[0]
+		console.log(abstractContainer)
+	let scontainers = document.getElementsByClassName("scontainer")
+		console.log(scontainers.length)
+
+		function func()
+		{  
+			console.log(event.target.id)
+			abstractContainer.innerHTML = descriptions[event.target.id-1]
+		}
+
+		for(let n = 0; n < scontainers.length; n++){
+			scontainers[n].addEventListener("mouseenter", func, false);
+		}
+	</script>
 		
-	    	
-			<div class="outer">
-			   <div class="box-container">
-				   <div class='box-title'>
-			      Commonsense Explanation as Next Event Prediction </div>
-			   </div>
-		        	<span class="button primary small left-button" > COLING 2020 </span> <span class="button primary small right-button" > Workshop </span>
-			
-			 </div>
-			  <div class="info">
-			<strong>Ben Rim W.</strong>, Okazaki N., “Commonsense Explanation as Next Event Prediction”, appeared in <i> Proceedings of the 14th International Workshop on Semantic Evaluation</i> , Poster presented at COLING 2020.
-		</div>
-		
-		
-		
-	</div>
+
+
+
 	
-</div> -->
+
+
+
+	</div>
 
 	
 <!-- <span class="image object"  style="position:relative;" >
