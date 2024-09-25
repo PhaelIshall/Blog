@@ -188,6 +188,25 @@ permalink: /publications/
 	<div class="flexcontainer">
 	
 		<div class="flexleft">
+
+
+			<section class="scontainer" id="0"> 
+				<div class='box'>
+						<div class="outer">
+							<div class="box-container">
+								<span class="button primary small left-button" > GenBench </span> <span class="button primary small right-button">Workshop paper </span> 
+								<div class='box-title'> Walking a Tightrope--Evaluating Large Language Models in High-Risk Domains </div>   
+							</div>
+						</div>
+						<div class="info">
+						<a src="https://aclanthology.org/2023.genbench-1.8/" > Paper Link </a>
+						Chia-Chien Hung, Wiem Ben Rim, Lindsay Frost, Lars Bruckner, Carolin Lawrence
+					</div>
+				</div>	
+			</section>
+
+
+			
 			<section class="scontainer" id="1"> 
 				<div class='box'>
 						<div class="outer">
@@ -277,6 +296,8 @@ permalink: /publications/
 	<script>
 
 		const descriptions = [
+		"<div class='abstract'> Abstract </div> <p class='abstract-text'> High-risk domains pose unique challenges that require language models to provide accurate and safe responses. Despite the great success of large language models (LLMs), such as ChatGPT and its variants, their performance in high-risk domains remains unclear. Our study delves into an in-depth analysis of the performance of instruction-tuned LLMs, focusing on factual accuracy and safety adherence. To comprehensively assess the capabilities of LLMs, we conduct experiments on six NLP datasets including question answering and summarization tasks within two high-risk domains: legal and medical. Further qualitative analysis highlights the existing limitations inherent in current LLMs when evaluating in high-risk domains. This underscores the essential nature of not only improving LLM capabilities but also prioritizing the refinement of domain-specific metrics, and embracing a more human-centric approach to enhance safety and factual reliability. Our findings advance the field toward the concerns of properly evaluating LLMs in high-risk domains, aiming to steer the adaptability of LLMs in fulfilling societal obligations and aligning with forthcoming regulations, such as the EU AI Act. </p> <img style='margin: auto; right: 50%;  transform: translateX(+35%); width: 60%' src='../assets/images/tightrope.png'>",
+
 		"<div class='abstract'> Abstract </div> <p class='abstract-text'> Knowledge Graphs (KGs) store information in the form of (head, predicate, tail)-triples. To augment KGs with new knowledge, researchers proposed models for KG Completion (KGC) tasks such as link prediction; i.e., answering (h; p; ?) or (?; p; t) queries. Such models are usually evaluated with averaged metrics on a held-out test set. While useful for tracking progress, averaged single-score metrics cannot reveal what exactly a model has learned -- or failed to learn. To address this issue, we propose KGxBoard: an interactive framework for performing fine-grained evaluation on meaningful subsets of the data, each of which tests individual and interpretable capabilities of a KGC model. In our experiments, we highlight the findings that we discovered with the use of KGxBoard, which would have been impossible to detect with standard averaged single-score metrics.  </p> 	<img style='width: 100%' src='../assets/images/kgxboard.png'>",
 
 			"<div class='abstract'> Abstract </div> <p class='abstract-text'> With the rise of AI systems in real-world applications comes the need for reliable and trustworthy AI. An important aspect for this are explainable AI systems. However, there is no agreed standard on how explainable AI systems should be assessed. Inspired by the Turing test, we introduce a human-centric assessment framework where a leading domain expert accepts or rejects the solutions of an AI system and another domain expert. By comparing the acceptance rates of provided solutions, we can assess how the AI system performs in comparison to the domain expert, and in turn whether or not the AI system's explanations (if provided) are human understandable. This setup -- comparable to the Turing test -- can serve as framework for a wide range of human-centric AI system assessments. We demonstrate this by presenting two instantiations: (1) an assessment that measures the classification accuracy of a system with the option to incorporate label uncertainties; (2) an assessment where the usefulness of provided explanations is determined in a human-centric manner.  </p> <img style='margin: auto; right: 50%;  transform: translateX(+35%); width: 60%' src='../assets/images/hai.png'>",
