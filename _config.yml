@@ -13,6 +13,9 @@ gems:
   - jekyll-archives
   - jekyll-paginate
 
+plugins:
+  - jekyll-seo-tag
+
 # 5. Collections
 collections:
   posts:
