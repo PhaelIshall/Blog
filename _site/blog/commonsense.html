@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<!--
+	SUN BLOG
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SWAGex for Commonsense Validation and Explanation | Σ ウイエム</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="SWAGex for Commonsense Validation and Explanation" />
+<meta name="author" content="Wiem Ben Rim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Commonsense reasoning has long been a challenge in the field of Natural Language Processing (NLP). Recently, the emergence of large pre trained language models achieving state-of-the-art results in several NLP tasks, such as BERT and GPT has also influenced commonsense tasks to regain popularity." />
+<meta property="og:description" content="Commonsense reasoning has long been a challenge in the field of Natural Language Processing (NLP). Recently, the emergence of large pre trained language models achieving state-of-the-art results in several NLP tasks, such as BERT and GPT has also influenced commonsense tasks to regain popularity." />
+<link rel="canonical" href="http://0.0.0.0:3000/blog/commonsense" />
+<meta property="og:url" content="http://0.0.0.0:3000/blog/commonsense" />
+<meta property="og:site_name" content="Σ ウイエム" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-27T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SWAGex for Commonsense Validation and Explanation" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Wiem Ben Rim"},"dateModified":"2020-01-27T00:00:00+00:00","datePublished":"2020-01-27T00:00:00+00:00","description":"Commonsense reasoning has long been a challenge in the field of Natural Language Processing (NLP). Recently, the emergence of large pre trained language models achieving state-of-the-art results in several NLP tasks, such as BERT and GPT has also influenced commonsense tasks to regain popularity.","headline":"SWAGex for Commonsense Validation and Explanation","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:3000/blog/commonsense"},"url":"http://0.0.0.0:3000/blog/commonsense"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-W4KH6N0CEC"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-W4KH6N0CEC');
+		</script>
+		
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-86RZ6NM6CP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-86RZ6NM6CP');
+</script> -->
+
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+<!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+
+<link rel="stylesheet" href="https://www.wiembnr.com/assets/styles/gruvbox-dark.css">
+<script src="https://www.wiembnr.com/assets/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<title>Σ ウイエム</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="https://www.wiembnr.com/assets/css/main.css" />
+<link rel="shortcut icon" type="image/png" href="https://www.wiembnr.com/assets/icon.png">
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8883021699930297"
+     crossorigin="anonymous"></script> -->
+<!-- <meta name="p:domain_verify" content="6b5e021c0b0916bec67b3248d451edfa"/> -->
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<nav class="logo">
+									<a href="https://www.wiembnr.com/" style='border-bottom: none;'><strong>HOME</strong></a>
+										&nbsp;
+									<a href="https://www.wiembnr.com/posts/" style='border-bottom: none;'><strong>POSTS</strong></a>
+										&nbsp;
+									<a href="https://www.wiembnr.com/publications/" style='border-bottom: none;'><strong>RESEARCH</strong></a>
+										&nbsp;
+									<a href="https://www.wiembnr.com/photography/" style='border-bottom: none;'><strong>INTERESTS</strong></a>
+										&nbsp;
+									<a href="https://www.wiembnr.com/about/" style='border-bottom: none;'><strong>ABOUT</strong></a>
+									</nav>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/wiem-ben-rim/" class="icon brands fa-linkedin-in"><span class="label">Discord</span></a></li>
+										<li><a href="https://twitter.com/PhaelIshall" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="mailto:wiem@sas.upenn.edu" class="icon fa fa-envelope"><span class="label">Mail</span></a></li>
+										<li><a href="https://github.com/PhaelIshall" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://www.youtube.com/channel/UC_L41CokXok3edg46zTlb2A" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+										<li><a href="https://www.instagram.com/survivingeducation/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://discord.gg/VcDzuSqu9b" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+						
+							<section>
+							<div class="row gtr-200">
+								<div class="col-2 col-12-medium">
+
+								</div>
+								<div class="col-8 col-12-medium">
+
+									<header class="main">
+										<h1>SWAGex for Commonsense Validation and Explanation</h1>
+										
+										<p><strong>01/27/2020</strong></p>
+									</header>
+									<h2>SWAGex for Commonsense Validation and Explanation</h2>
+
+<p><img class="image fit" src="https://user-images.githubusercontent.com/13065761/151680380-8d367cf0-8487-442b-a674-7ed3e9c1f445.jpeg" alt="" /></p>
+
+<h2 id="project-motivation">Project Motivation</h2>
+<p>Commonsense reasoning has long been a challenge in the field of Natural Language Processing (NLP). Recently, the emergence of large pre-trained language models achieving state-of-the-art results in several
+NLP tasks, such as BERT and GPT has also influenced commonsense tasks to regain popularity.</p>
+
+<p>Natural Language Inference (NLI) is one of the most popular tasks in commonsense reasoning research. It consists of determining if a hypothesis is correct, given a premise. Situations With Adversarial Generation (SWAG) task is closely related to NLI. It consists of determining the most appropriate ending given a start phase as a context. The start phrases and endings in SWAG dataset are video captions. The task is to find the ending that describes a possible (future) world that can follow the given sentence even when it is not strictly entailed. Making such inference necessitates a rich understanding of everyday physical
+situations.</p>
+
+<h2 id="summary">Summary</h2>
+<ul>
+  <li>Used multiple methods on the pre-trained language model BERT to recognize sentences against commonsense and justify the reasoning behind this decision.</li>
+  <li>
+    <p>Investigated the ability to transfer commonsense knowledge from SWAG to ComVE task by training a model for the Explanation task with Next Event Prediction data.</p>
+
+    <p><img class="image fit" src="https://user-images.githubusercontent.com/13065761/151681108-1bac2faf-030e-44d2-b38a-b701b1eb0bd1.png" alt="" />
+  <img class="image fit" src="https://user-images.githubusercontent.com/13065761/151681110-03301049-6762-482e-9b1d-f4fd3f27939d.png" alt="" /></p>
+  </li>
+</ul>
+
+<h2 id="project-results">Project Results</h2>
+<ul>
+  <li>Paper “SWAGex at SemEval-2020: Commonsense Explanation as Next Event Prediction”, appeared in Proceedings of the 14th International Workshop on Semantic Evaluation.</li>
+  <li>Poster presentation at COLING, in Dec 2020 (online)</li>
+</ul>
+
+<!-- <code><pre></pre></code> -->
+
+
+									<p></p>
+								
+
+									
+									<ul class="actions fit">
+										
+											<li><a href="/blog/readability" class="button fit">Previous Post</a></li>
+										
+
+										
+									</ul>
+								
+
+									<p></p>
+									
+									<section>
+										
+	
+	<div class="row gtr-200">
+			<div class="col-5 col-12-medium">
+				<h3 id="elements">News and Updates</h3>
+<!-- 				<div id="mc_embed_signup">
+					<form method="post" action="https://gorillasun.us1.list-manage.com/subscribe/post?u=2ec45cad93e090c190c03f02d&amp;id=f34e6ff990"
+					      id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+						<input type="email" name="EMAIL" id="mce-EMAIL" value="" placeholder="Email" style="margin: 0 0 0.5em 0" required>
+
+						<ul class="actions fit">
+							<li><input input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="primary" /></li>
+						</ul>
+
+					</form>
+				</div> -->
+				<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			</div>
+		
+<!-- 			<div class="col-7 col-12-medium">
+				<div class="box">
+				<p>If you enjoyed this post, consider subscribing to my mailing list for the occasional update on new blog posts. No spam, promise. <strong>Otherwise come join me on <a href='https://twitter.com/gorillasu'>Twitter</a>!</strong></p>
+				</div>
+			</div> -->
+		
+		<!--
+			<div class="col-7 col-12-medium">
+				<div class="box">
+				<p>Trade Offer :warning:: You get: Updates on new blog posts. I get: your email address. No spam, promise. <strong>Otherwise come join me on <a href='https://twitter.com/gorillasu'>Twitter</a>!</strong></p>
+				</div>
+			</div>
+		-->
+	</div>
+										
+<!-- 	<div> -->
+<!-- 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8883021699930297"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8883021699930297"
+     data-ad-slot="9101964787"></ins> -->
+<!-- <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> -->
+<!-- 	</div> -->
+			
+
+									
+									
+									<!--
+									<a href="https://twitter.com/gorillasu?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @gorillasu</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->									
+
+									<!--
+									<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+									<style type="text/css">
+										#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+										/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+										   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+									</style>
+									<div id="mc_embed_signup">
+
+										<h3>For new blog posts and updates, consider joining my mailing list!</h3>
+
+
+										<form method="post" action="https://gorillasun.us1.list-manage.com/subscribe/post?u=2ec45cad93e090c190c03f02d&amp;id=f34e6ff990"
+										      id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+											<div class="row gtr-uniform">
+												<div class="col-6 col-12-xsmall">
+													<input type="text" name="FNAME" id="mce-FNAME" value="" placeholder="First Name" />
+												</div>
+												<div class="col-6 col-12-xsmall">
+													<input type="text" name="LNAME" id="mce-LNAME" value="" placeholder="Last Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="email" name="EMAIL" id="mce-EMAIL" value="" placeholder="Email" required>
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="checkbox" id="demo-human" name="demo-human" required>
+													<label for="demo-human">I am a human</label>
+												</div>
+												<div id="mce-responses" class="clear">
+													<div class="response" id="mce-error-response" style="display:none"></div>
+													<div class="response" id="mce-success-response" style="display:none"></div>
+												</div>
+												
+												<div class="col-12">
+													<ul class="actions">
+														<li><input input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="primary" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</div>
+									<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+									-->
+										<!--
+										<div class="col-6 col-12-small">
+									<h3>If you <strong>REALLY</strong> enjoyed reading this article, consider becoming a patreon with some perks!</h3>
+									<a href="https://www.patreon.com/bePatron?u=51102985" data-patreon-widget-type="become-patron-button" style='width: 100%;'>Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+									</div>
+-->
+										
+									<p></p>
+									<section>
+  <div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+var disqus_config = function () {
+this.page.url = index.html;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-ahmadmoussa-github-io-sunblog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+									<script>
+    
+    var elements = document.querySelectorAll('p');
+    Array.prototype.forEach.call(elements, function(el, i){
+        if(el.innerHTML=='[expand]') {
+            var parentcontent = el.parentNode.innerHTML.replace('<p>[expand]</p>','<div class="expand" style="display: none; height: 0; overflow: hidden;">').replace('<p>[/expand]</p>','</div>');
+            el.parentNode.innerHTML = parentcontent;
+        }
+    });
+
+    var elements = document.querySelectorAll('div.expand');
+    Array.prototype.forEach.call(elements, function(el, i){
+        el.previousElementSibling.innerHTML = el.previousElementSibling.innerHTML + '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="this.parentNode.parentNode.nextElementSibling.style.display = \'block\'; this.parentNode.parentNode.nextElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">read&nbsp;more&nbsp;&rarr;</a></span>';
+    });
+
+</script>
+
+								</div>
+								
+
+									<!--
+									<aside>
+									<div class="widget"></div>
+									<div class="widget js-sticky-widget">
+										
+										<li><a href="https://twitter.com/gorillasu" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										</div>
+									<div class="widget"></div>
+									</aside>
+
+							
+								-->
+							</div>
+							</section>
+						</div>
+					</div>
+
+					<!-- Sidebar
+					<div id="sidebar">
+						<div class="inner">
+							<section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section>
+
+
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="https://gorillasun.de/index.html">Homepage</a></li>
+									<li><a href="https://gorillasun.de/archive.html">Archive</a></li>
+									<li><a href="https://gorillasun.de/gallery.html">Gallery</a></li>
+									<li><a href="https://gorillasun.de/about.html">About</a></li>
+
+								</ul>
+							</nav>
+
+
+
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<p>Shoot me a message! Via email or DM me on social media: </p>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="#">gorillasuncontact@gmail.com</a></li>
+									<li class="icon brands fa-instagram"><a href="https://www.instagram.com/gorilla.sun/" >@gorilla.sun</li>
+									<li class="icon brands fa-twitter"><a href="https://twitter.com/gorillasu" >@gorilla.su</li>
+								</ul>
+							</section>
+
+
+							<footer id="footer">
+								<p class="copyright">&copy; GorillaSun. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+						</div>
+					</div>
+					-->
+<!-- 		<div> -->
+			
+<!-- 		</div> -->
+				</div>
+
+		<!-- Scripts -->
+
+
+			<script src="https://www.wiembnr.com/assets/js/jquery.min.js"></script>
+			<script src="https://www.wiembnr.com/assets/js/browser.min.js"></script>
+			<script src="https://www.wiembnr.com/assets/js/breakpoints.min.js"></script>
+			<script src="https://www.wiembnr.com/assets/js/util.js"></script>
+			<script src="https://www.wiembnr.com/assets/js/main.js"></script>
+
+<!-- 		<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+		<script>
+		  kofiWidgetOverlay.draw('gorillasun', {
+		    'type': 'floating-chat',
+		    'floating-chat.donateButton.text': 'Support me',
+		    'floating-chat.donateButton.background-color': '#00b9fe',
+		    'floating-chat.donateButton.text-color': '#fff'
+		  });
+		</script> -->
+		<!--
+		<script src="https://gorillasun.de/assets/js/sticksy.min.js"></script>
+		<script>
+			var stickyEl = new Sticksy('.widget.js-sticky-widget', {
+				topSpacing: 60,
+			})
+			stickyEl.onStateChanged = function (state) {
+				if (state === 'fixed') stickyEl.nodeRef.classList.add('widget--sticky')
+				else stickyEl.nodeRef.classList.remove('widget--sticky')
+			}
+		</script>
+		-->
+	</body>
+
+
+</html>

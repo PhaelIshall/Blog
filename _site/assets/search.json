@@ -1,0 +1,26 @@
+
+
+[
+  
+  
+    
+    
+      {
+        "title": "Extracting Non-traditional Features to Predict Readability",
+        "excerpt": "Extracting Non-traditional Features to Predict Readability\n",
+        "content": "Extracting Non-traditional Features to Predict Readability\n\n\n\nProject Motivation\nThe success of a supervised learning task like predicting readability comes primarily from the\ndevelopment of a strong set of features. There are many common features used to predict\nreadability that were not necessarily designed for supervised learning, and do not map well to\nour dataset (e.g. Flesch–Kincaid). Due to the highly specialized and complex nature of\nmedical abstracts, our approach required the development of features more custom to the\nproblem and more fine-grained in discriminating between various levels of difficulty.\nIn the feature selection we relied on a research paper titled “A Comparison of Features for\nAutomatic Readability Assessment” [1], as well as adjusting the features mentioned below to\nmatch the medical nature of the excerpts.\n\n[1] Lijun Feng, Martin Jansche, Matt Huenerfauth, Noemie Elhadad, “A Comparison of\n\t\t\t\t\tFeatures for Automatic Readability Assessment”, Coling 2010: Poster Volume, pages\n\t\t\t\t\t276–284, Beijing, August 2010\n\nResources\nGithub\n\nLeaderboard\n\n\n",
+        "url": "/blog/readability"
+      },
+    
+      {
+        "title": "SWAGex for Commonsense Validation and Explanation",
+        "excerpt": "SWAGex for Commonsense Validation and Explanation\n",
+        "content": "SWAGex for Commonsense Validation and Explanation\n\n\n\nProject Motivation\nCommonsense reasoning has long been a challenge in the field of Natural Language Processing (NLP). Recently, the emergence of large pre-trained language models achieving state-of-the-art results in several\nNLP tasks, such as BERT and GPT has also influenced commonsense tasks to regain popularity.\n\nNatural Language Inference (NLI) is one of the most popular tasks in commonsense reasoning research. It consists of determining if a hypothesis is correct, given a premise. Situations With Adversarial Generation (SWAG) task is closely related to NLI. It consists of determining the most appropriate ending given a start phase as a context. The start phrases and endings in SWAG dataset are video captions. The task is to find the ending that describes a possible (future) world that can follow the given sentence even when it is not strictly entailed. Making such inference necessitates a rich understanding of everyday physical\nsituations.\n\nSummary\n\n  Used multiple methods on the pre-trained language model BERT to recognize sentences against commonsense and justify the reasoning behind this decision.\n  \n    Investigated the ability to transfer commonsense knowledge from SWAG to ComVE task by training a model for the Explanation task with Next Event Prediction data.\n\n    \n  \n  \n\n\nProject Results\n\n  Paper “SWAGex at SemEval-2020: Commonsense Explanation as Next Event Prediction”, appeared in Proceedings of the 14th International Workshop on Semantic Evaluation.\n  Poster presentation at COLING, in Dec 2020 (online)\n\n\n\n",
+        "url": "/blog/commonsense"
+      },
+    
+  
+  
+  
+]
+
